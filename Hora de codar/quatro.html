@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 4</title>
+
+    <script>
+        var escolha = parseInt(prompt("Digite a forma que você deseja calcular,(Ex 1-Retângulo, 2-Quadrado, 3-Losango, 4-Trapézio, 5-Paralelogramo, 6-Triângulo, 7-Circulo):"))
+        
+        
+        switch(escolha){
+            case 1:
+                var base = parseFloat(prompt("Digite a BASE do retângulo:"));
+                var altura = parseFloat(prompt("Digite o ALTURA do retângulo:")); 
+                var area = base * altura;
+
+                alert(`a area do retangulo é de: ${area}`);
+                break;
+
+            case 2:
+                var lado = parseFloat(prompt("Digite o LADO do quadrado:"));
+                var area = lado * lado;
+
+                alert(`A area do quadrado é de: ${area}`);
+                break;
+
+            case 3: 
+                var diagonalMaior = parseFloat(prompt("Digite a DIAGONAL MAIOR do Losango:"));
+                var diagonalMenor = parseFloat(prompt("Digite a DIAGONAL MENOR do Losango:"));
+                var area = (diagonalMaior * diagonalMenor) / 2 
+
+                alert(`A area do Losango é de: ${area}`);
+                break;
+
+            case 4: 
+                var baseMaior = parseFloat(prompt("Digite a BASE MAIOR do Trapézio:"));
+                var baseMenor = parseFloat(prompt("Digite a BASE MENOR do Trapézio:"));
+                var altura = parseFloat(prompt("Digite a ALTURA do Trapézio"));
+
+                var area = ((baseMaior + baseMenor) * altura) / 2;
+                alert(`a area do Trapézio é de: ${area}`);
+                break;
+
+            case 5:
+                var base = parseFloat(prompt("Digite a BASE do Paralelogramo:"));
+                var altura = parseFloat(prompt("Digite a ALTURA do Paralelogramo:"));
+                var area = (base * altura); 
+
+                alert(`A area do Paralelogramo é de: ${area}`);
+                break;
+
+            case 6:
+                var base = parseFloat(prompt("Digite a  BASE do Triâgulo:"));
+                var altura = parseFloat(prompt("Digite a ALTURA do Triâgulo:"));
+                var area = (base * altura) / 2 
+
+                alert(`A area do Triâgulo é de: ${area}`);
+                break;
+
+            case 7:
+                var raio = parseFloat(prompt("Digite o tamanho do RAIO do circulo:"));
+            
+                var area = 3.14 * (raio * raio);
+
+                alert(`A area do Losango é de: ${area}`);
+                break;
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
